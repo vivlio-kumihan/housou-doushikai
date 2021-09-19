@@ -1,0 +1,30 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  border: solid 1px black;
+}
+
+h1 {
+  background-color: red;
+
+}
+
+p {
+  color: aquamarine;
+  background-color: red;
+}
+
+.box1 {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background: aquamarine;
+}
+
+.box2 {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background: bisque;
+}

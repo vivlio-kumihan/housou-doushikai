@@ -1,0 +1,293 @@
+html {
+    font-size: 17px;
+    line-height: 30px;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+}
+
+p {
+    margin: 0rem;
+    line-height: 1.7;
+    font-family: YakuCaltMincho, YuMincho, Yu Mincho, serif;
+    color: black;
+    text-align: justify;
+    text-indent: 1rem;
+}
+
+/* ========== インデント ========== */
+/* 行頭一文字落とし */
+.indentation {
+    padding-left: 1rem;
+    text-indent: -1rem;
+}
+/* 行頭一文字落としの後続段落　または　一文字分段落字下げ */
+.indentation-following {
+    padding-left: 1rem;
+    text-indent: 1rem;
+}
+
+/* ========== 文字ツメ ========== */
+.tume {
+    font-feature-settings: "palt";
+}
+
+/* ========== Letter Space ========== */
+.letter-spce-2percent {
+    letter-spacing: -0.02rem;
+}
+.letter-spce-5percent {
+    letter-spacing: -0.05rem;
+}
+.letter-spce-7percent {
+    letter-spacing: -0.07rem;
+}
+.letter-spce-2bu {
+    letter-spacing: 0.5rem;
+}
+
+/* ========== ページの先頭へ ========== */
+.back-to-top {
+    text-align: right;
+    font-family: YakuCaltGothic, YuGothic, Yu Gothic, sans-serif;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+.back-to-top a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+/* ========== 見出し ========== */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: YuMincho Demibold, Yu Mincho Demibold, serif;
+    font-feature-settings: "palt";
+}
+
+h3 {
+    margin: 20px 0 20px 1rem;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    text-indent: -1rem;
+}
+
+h4 {
+    margin: 10px 0 10px 1rem;
+    font-size: 1.2rem;
+    line-height: 23px;
+    padding-left: 1rem;
+    text-indent: -1rem;
+}
+
+/* ========== flex container start ========== */
+.col-span {
+    margin-top: 80px;
+    /* 1段落にする */
+    float-reference: column;
+    float: top;
+    column-span: all;
+    page-break-before: always;
+    /* 親要素に指定 */
+    height: 155px;
+    
+    display: flex;
+    flex-direction: column;
+}
+.FA1-title {
+    position: relative;
+    height: 100px;
+    margin: 0 9rem 0 1rem ;
+}
+.FA1-title h2 {
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    transform: translate(0%, -50%);      
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: bold;
+    font-feature-settings: "palt";
+}
+.author {
+    height: 40px;
+    position: relative;
+    font-feature-settings: "palt";
+}
+.author .spec {
+    position: absolute;
+    margin: 0 9rem;
+    bottom: 0%;
+    right: 0%;
+    transform: translate(0%, 0%);    
+    text-align: right;
+    font-size: 0.8rem;
+    line-height: 1.3;
+    font-family: YakuCaltMincho, YuMincho, Yu Mincho, serif;
+}
+.author .name {
+    font-size: 1.1rem;
+    font-family: YakuCaltGothic, YuGothic, Yu Gothic, sans-serif;
+    font-weight: bold;
+}
+.author img {
+    position: absolute;
+    width: 8rem;
+    margin: 0;
+    bottom: 0%;
+    right: 0%;
+    transform: translate(0%, 0%);
+}
+hr.clearfix {
+    clear: both;
+    border: none;
+    padding: 1px;
+    margin: -1px;
+    overflow: auto;
+}
+/* ========== flex container end ========== */
+
+/* ========== 目　次 ========== */
+nav {
+    /* 1段落にする */
+    /* float-reference: column;
+    float: top;
+    column-span: all;
+    page-break-before: always; */
+}
+.cntents-container {
+    display: flex;
+    flex-direction: column;
+}
+nav h2 {
+    margin: 4rem 0 3rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.contents-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 20px 10px;
+    padding: 20px 40px;
+    font-family: YakuCaltGothic, YuGothic, Yu Gothic, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: left;
+    font-feature-settings: "palt";
+    color: #3F4E5F;
+    border: 1px solid #0F7FF9;
+}
+.contents-item a {
+    text-decoration: none;
+    font-family: YakuCaltMincho, YuMincho, Yu Mincho, serif;;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3F4E5F;
+}
+.contents-item img {
+    display: none;
+}
+
+
+/* ========== スマートフォンの表示 ========== */
+@media (max-width: 479px) {
+    body {
+        width: 95%;
+    }
+
+    p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+    
+    .col-span {
+        margin-top: 40px;
+        padding-top: 30px;
+        height: 100px;
+        border-top: 1px dotted black; 
+    }
+    .FA1-title {
+        /* height: 100px; */
+        margin: 0 0 0 1rem ;
+    }
+    .FA1-title h2 {
+        font-size: 1.5rem;
+    }
+    .author .spec {
+        margin: 0;
+        text-align: right;
+        font-size: 0.8rem;
+        line-height: 1.3;
+    }
+    .author img {
+        display: none;
+    }
+    h3 {
+        margin: 10px 0 10px 1rem;
+        font-size: 1.1rem;
+    }
+
+    /* 目次 */
+    nav h2 {
+        margin: 2rem 0 1rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .contents-item {
+        flex-direction: column;
+        justify-content: center;
+
+        position: relative;
+
+        margin: 0.5rem 0;
+        padding: 0.5rem 0.5rem 0.5rem 5rem ;
+        height: 90px;
+        font-size: 1rem;
+    }
+    .contents-item .contents-author {
+        margin-top: 0.5rem;
+    }
+    .contents-item a {
+        font-size: 1.2rem;
+    }
+    .contents-item img {
+        display: block;
+        width: 4rem;
+        position: absolute;
+        margin: 0;
+        top: 50%;
+        left: 0%;
+        transform: translate(0%, -50%);
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:1025px) {
+    body {
+        width: 90%;
+    }
+    p {
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+    .contents-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 10px 20px 10px;
+        padding: 10px 40px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1026px) {
+    body {
+        width: 50%;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
