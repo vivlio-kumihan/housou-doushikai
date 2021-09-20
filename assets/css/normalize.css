@@ -10,9 +10,9 @@
 
 html {
   /* defalt */
-  /* line-height: 1.15; */
+  line-height: 1.15;
   /* my setting */
-  line-height: 0;
+  /* line-height: 0; */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 

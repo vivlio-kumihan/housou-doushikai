@@ -1,27 +1,27 @@
-html {
+/* html {
   font-size: 3.5mm;
   line-height: 23px;
-}
+} */
 
 body {
   margin: 0;
   padding: 0;
 }
 
-@page {
+/* @page {
   size: 210mm 297mm;
   margin: 0;
-}
+} */
 
-#toc {
+/* #toc {
   display: none;
-}
+} */
 
-h1 {
+/* h1 {
   display: none;
-}
+} */
 
-img {
+/* img {
   display: block;
   width: 100%;
-}
+} */
