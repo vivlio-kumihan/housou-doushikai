@@ -73,6 +73,38 @@ body {
     }
 }
 
+@page tobira {
+    @top-left {
+        content: none;
+    }
+    @top-left-corner {
+        content: none;
+    }
+    @bottom-left {
+        content: none;
+    }
+    @top-right {
+        content: none;
+    }
+    @top-right-corner {
+        content: none;
+    }
+    @bottom-right {
+        content: none;
+    }
+}
+
+.tobira {
+    page: tobira;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background: white;
+}
+.title-back {
+    width: 624px;
+}
+
 /* ========== インデント ========== */
 /* 行頭一文字落とし */
 .indentation {
@@ -91,16 +123,19 @@ body {
 }
 
 /* ========== Letter Space ========== */
-.letter-spce-2percent {
+.letter-space-2percent {
     letter-spacing: -0.02rem;
 }
-.letter-spce-5percent {
+.letter-space-5percent {
     letter-spacing: -0.05rem;
 }
-.letter-spce-7percent {
+.letter-space-7percent {
     letter-spacing: -0.07rem;
 }
-.letter-spce-2bu {
+.letter-space-10percent {
+    letter-spacing: -0.1rem;
+}
+.letter-space-2bu {
     letter-spacing: 0.5rem;
 }
 
@@ -112,27 +147,12 @@ body {
 
 /* ========== タイトルスペース ========== */
 #fa-1-main-title {
-    page-break-before: always;
-    width: 624px;
-    
-    position: absolute;
-    top: -20px;
-
-    background: url(../img/img_特集1-タイトルバックの罫.svg) no-repeat;
-    background-size: cover;
-    background-position: 0 20px;
-}
-.avoid-space {
-    float: left;
+    break-before: page;
     float-reference: page;
-    column-span: all;
-    width: 624px;
-    height: 176px;
-}
-.avoid-space::after {
-    content: "";
-    display: block;
-    clear: both;
+    float: top;
+    background: white url(../img/img_特集1-タイトルバックの罫.svg) no-repeat;
+    background-size: cover;
+    border-bottom: white solid 40px;
 }
 #fa-1-main-title h1 {
     font-size: 4rem;
@@ -145,12 +165,13 @@ body {
     font-size: 26px;
     font-family: SourceHanSansJP-Regular, sans-serif;
     letter-spacing: 0;
+    display: block;
+    line-height: 1.4;
 }
 #fa-1-main-title span.suffix {
     font-size: 42px;
     letter-spacing: 0;
 }
-
 #fa-1-main-title .catch-copy {
     font-size: 18px;
     margin-top: 12px;
@@ -179,6 +200,7 @@ h1 {
 .headers {
     height: 88px;
     margin-top: 44px;
+    clear: all;
 }
 .headers img {
     float: left;
