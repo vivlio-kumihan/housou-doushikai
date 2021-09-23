@@ -195,34 +195,34 @@ h1 {
     line-height: 1.3;
 }
 
-.headers {
+.feature-article-persons {
     height: 88px;
     margin-top: 44px;
     clear: all;
 }
-.headers img {
+.feature-article-persons img {
     float: left;
     width: 78px;
     height: 80px;
     margin-right: 1rem;
     object-fit: cover;
 }
-.headers h2 {
+.feature-article-persons h2 {
     font-size: 16px;
     line-height: 1.25;
     padding-top: 1rem;
 }
-.headers p {
+.feature-article-persons p {
     text-indent: 0rem;
     margin-top: 1rem;
 }
-.headers span {
+.feature-article-persons span {
     font-size: 0.85rem;
     margin-right: 0.5rem;
 }
 /* clear: both;を付ける意味
-.headers のスタイルに height: 88px; があるため、このブロックが88pxの高さをもち、その下にそのあとの段落が配置される。その高さ88pxのブロック内にある float: left の img の高さはそれより小さな80pxであるため、 clear がなくてもあとの段落はfloatの影響がないということ。 */
-/* .headers::after {
+.feature-article-persons のスタイルに height: 88px; があるため、このブロックが88pxの高さをもち、その下にそのあとの段落が配置される。その高さ88pxのブロック内にある float: left の img の高さはそれより小さな80pxであるため、 clear がなくてもあとの段落はfloatの影響がないということ。 */
+/* .feature-article-persons::after {
     content: "";
     display: block;
     clear: both;
