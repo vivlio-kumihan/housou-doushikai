@@ -5,9 +5,8 @@ html {
 
 body {
     column-count: 2;
-    column-gap: 4rem;
+    column-gap: 2rem;
     column-fill: balance;
-    column-rule: 1px dotted black;
     /* 検証用背景のアミ */
     /* background-color: rgba(0, 0, 0, 0.05); */
 }
@@ -18,27 +17,33 @@ body {
     margin: 115px 85px 84px;
     /* size: A4; */
     /* 1mm = 3.78px */
+    /* 3mm = 11.5px */
     /* 1 column width = 22w = 286px
     286px + 52px + 286px = 624px
     794px - 624px = 170px
     170px / 2 = 85px */
     /* column height = 42L = 924px */
     /* トンボ表示 */
-    /* marks: crop; */
+    marks: crop;
 }
 
 @page :right {
     @top-right {
-        content: "特集1　頑張れ!! 宮本圭子副会長";
-        margin: -3mm 0 32px;
-        padding: 2rem 1rem 0;
-        font-size: 0.85rem;
-        border: 2px solid black;
+        content: "役員就任・退任のご挨拶";
+        margin: -3mm -85px 3rem -85px;
+        vertical-align: bottom;
+        padding: 0 85px 1rem;
+        font-size: 1.4rem;
+        font-family: SourceHanSansJP, sans-serif;
+        font-weight: bold;
+        font-feature-settings: "palt" 1;
+        color: white;
     }
     @top-left-corner {
         content: "";
-        margin: -3mm -627px 29px 88px;
-        border: 1px solid rgba(0, 0, 0, 0.5);
+        margin: -3mm -720.5px 3rem 0;
+        background: url("../img/img_幹事挨拶-ヘッダーの罫.svg") left bottom no-repeat, rgba(0, 0, 0, 0.5);
+        background-size: cover;
     }
     @bottom-right {
         content: "法曹同志会 2022 |　"counter(page);
@@ -51,17 +56,11 @@ body {
 }
 
 @page :left {
-    @top-left {
-        content: "Feature Articles";
-        margin: -3mm 0 32px;
-        padding: 2rem 1rem 0;
-        font-size: 0.9rem;
-        border: 2px solid black;
-    }
     @top-left-corner {
         content: "";
-        margin: -3mm -627px 29px 88px;
-        border: 1px solid rgba(0, 0, 0, 0.5);
+        margin: -3mm -709px 3rem -3mm;
+        background: url("../img/img_幹事挨拶-ヘッダーの罫.svg") left bottom no-repeat, rgba(0, 0, 0, 0.5);
+        background-size: cover;
     }
     @bottom-left {
         content: counter(page) "　| 法曹同志会 2022";
@@ -69,9 +68,6 @@ body {
         font-size: 11px;
         vertical-align: top;
         padding-top: 2rem;
-    }
-    @bottom-center {
-        content: "";
     }
 }
 
@@ -145,33 +141,32 @@ body {
 
 
 /* ========== タイトルスペース ========== */
-#fa-1-main-title {
+#secretary-greet-title {
+    height: 154px;
     break-before: page;
     float-reference: page;
     float: top;
-    background: white url(../img/img_特集1-タイトルバックの罫.svg) no-repeat;
-    background-size: cover;
-    border-bottom: white solid 40px;
+    background: linear-gradient(to right, transparent 0%, transparent 10%, white 100%), url(../img/img_幹事挨拶-タイトルバックの球.svg) top left no-repeat;
+    background-size: 18%;
 }
-#fa-1-main-title h1 {
-    font-size: 4rem;
-    line-height: 1.1;
-    font-family: SourceHanSerifJP, serif;
-    font-weight: 900;
-    letter-spacing: 0.75rem
+#secretary-greet-title h1,
+#secretary-greet-title h2 {
+    margin-left: 7rem;
+    line-height: 1.2;
 }
-#fa-1-main-title span.pre {
-    font-size: 26px;
-    font-family: SourceHanSansJP-Regular, sans-serif;
-    letter-spacing: 0;
-    display: block;
-    line-height: 1.4;
+#secretary-greet-title h1 {
+    font-size: 1.5rem;
+    font-family: SourceHanSansJP-Heavy, sans-serif;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.8);
 }
-#fa-1-main-title span.suffix {
-    font-size: 42px;
-    letter-spacing: 0;
+#secretary-greet-title h2 {
+    font-size: 3rem;
+    font-family: SourceHanSansJP-ExtraLight, sans-serif;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.8);
 }
-#fa-1-main-title .catch-copy {
+#secretary-greet-main-title .catch-copy {
     font-size: 18px;
     margin-top: 12px;
     padding: 5px 13px;
