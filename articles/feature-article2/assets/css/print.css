@@ -15,7 +15,12 @@ body {
 /* ========== ページ ========== */
 @page {
     size: 794px 1123px;
-    margin: 115px 85px 84px;
+    /* トンボ表示 */
+    /* marks: crop; */
+}
+
+@page :right {
+    margin: 181px 163px 150px 85px;
     /* size: A4; */
     /* 1mm = 3.78px */
     /* 1 column width = 22w = 286px
@@ -23,22 +28,22 @@ body {
     794px - 624px = 170px
     170px / 2 = 85px */
     /* column height = 42L = 924px */
-    /* トンボ表示 */
-    /* marks: crop; */
-}
-
-@page :right {
     @top-right {
         content: "特集1　頑張れ!! 宮本圭子副会長";
-        margin: -3mm 0 32px;
+        margin: -3mm -130px 98px 0px;
         padding: 2rem 1rem 0;
         font-size: 0.85rem;
         border: 2px solid black;
     }
     @top-left-corner {
         content: "";
-        margin: -3mm -627px 29px 88px;
         border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    @right-top {
+        content: url("../img/img_background.jpg");
+        width: 380mm;
+        margin: -20mm 0mm -28mm -345mm;
+        z-index: -1;
     }
     @bottom-right {
         content: "法曹同志会 2022 |　"counter(page);
@@ -46,28 +51,39 @@ body {
         font-family: YakuCaltMincho, YuMincho, Yu Mincho, serif;
         font-size: 11px;
         vertical-align: top;
+        margin-top: 66px;
+        margin-right: -130px;
         padding-top: 2rem;
     }
 }
 
 @page :left {
+    margin: 181px 85px 150px 163px;
     @top-left {
         content: "Feature Articles";
-        margin: -3mm 0 32px;
+        margin: -3mm 0px 98px -130px;
         padding: 2rem 1rem 0;
         font-size: 0.9rem;
         border: 2px solid black;
     }
     @top-left-corner {
         content: "";
-        margin: -3mm -627px 29px 88px;
+        margin: -3mm -549px 95px 88px;
         border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    @right-top {
+        content: url("../img/img_background.jpg");
+        width: 1400px;
+        margin: -66px 0px -66px -638px;
+        z-index: -1;
     }
     @bottom-left {
         content: counter(page) "　| 法曹同志会 2022";
         font-family: YakuCaltMincho, YuMincho, Yu Mincho, serif;
         font-size: 11px;
         vertical-align: top;
+        margin-top: 66px;
+        margin-left: -130px;
         padding-top: 2rem;
     }
     @bottom-center {
