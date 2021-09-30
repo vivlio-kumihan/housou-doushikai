@@ -15,12 +15,6 @@ body {
 /* ========== ページ ========== */
 @page {
     size: 794px 1123px;
-    /* トンボ表示 */
-    /* marks: crop; */
-}
-
-@page :right {
-    margin: 181px 163px 150px 85px;
     /* size: A4; */
     /* 1mm = 3.78px */
     /* 1 column width = 22w = 286px
@@ -28,21 +22,28 @@ body {
     794px - 624px = 170px
     170px / 2 = 85px */
     /* column height = 42L = 924px */
+    /* トンボ表示 */
+    /* marks: crop; */
+}
+
+@page :right {
+    margin: 159px 150px 128px 85px;
     @top-right {
         content: "特集1　頑張れ!! 宮本圭子副会長";
-        margin: -3mm -130px 98px 0px;
+        margin: -3mm -65px 76px 0;
         padding: 2rem 1rem 0;
         font-size: 0.85rem;
         border: 2px solid black;
     }
-    @top-left-corner {
+    @top-right-corner {
         content: "";
+        margin: -3mm 81px 72px -555px;
         border: 1px solid rgba(0, 0, 0, 0.5);
     }
     @right-top {
-        content: url("../img/img_background.jpg");
-        width: 380mm;
-        margin: -20mm 0mm -28mm -345mm;
+        content: "";
+        margin: -44px 85px -44px -644px;
+        background: url("../img/img_background.jpg");
         z-index: -1;
     }
     @bottom-right {
@@ -50,44 +51,37 @@ body {
         /* margin-right: 2rem; */
         font-family: YakuCaltMincho, YuMincho, Yu Mincho, serif;
         font-size: 11px;
-        vertical-align: top;
-        margin-top: 66px;
-        margin-right: -130px;
-        padding-top: 2rem;
+        vertical-align: bottom;
+        padding-bottom: 3rem;
     }
 }
 
 @page :left {
-    margin: 181px 85px 150px 163px;
+    margin: 159px 85px 128px 150px;
     @top-left {
         content: "Feature Articles";
-        margin: -3mm 0px 98px -130px;
+        margin: -3mm 0 76px -65px;
         padding: 2rem 1rem 0;
         font-size: 0.9rem;
         border: 2px solid black;
     }
     @top-left-corner {
         content: "";
-        margin: -3mm -549px 95px 88px;
+        margin: -3mm -563px 72px 89px;
         border: 1px solid rgba(0, 0, 0, 0.5);
     }
-    @right-top {
-        content: url("../img/img_background.jpg");
-        width: 1400px;
-        margin: -66px 0px -66px -638px;
+    @left-top {
+        content: "";
+        margin: -44px -644px -44px 85px;
+        background: url("../img/img_background.jpg");
         z-index: -1;
     }
     @bottom-left {
         content: counter(page) "　| 法曹同志会 2022";
         font-family: YakuCaltMincho, YuMincho, Yu Mincho, serif;
         font-size: 11px;
-        vertical-align: top;
-        margin-top: 66px;
-        margin-left: -130px;
-        padding-top: 2rem;
-    }
-    @bottom-center {
-        content: "";
+        vertical-align: bottom;
+        padding-bottom: 3rem;
     }
 }
 
