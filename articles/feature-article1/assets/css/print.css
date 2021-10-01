@@ -35,9 +35,9 @@ body {
         font-size: 0.85rem;
         border: 2px solid black;
     }
-    @top-left-corner {
+    @top-right-corner {
         content: "";
-        margin: -3mm -627px 29px 88px;
+        margin: -3mm 81px 28px -620px ;
         border: 1px solid rgba(0, 0, 0, 0.5);
     }
     @bottom-right {
@@ -45,8 +45,8 @@ body {
         /* margin-right: 2rem; */
         font-family: YakuCaltMincho, YuMincho, Yu Mincho, serif;
         font-size: 11px;
-        vertical-align: top;
-        padding-top: 2rem;
+        vertical-align: bottom;
+        padding-bottom: 3rem;
     }
 }
 
@@ -58,20 +58,17 @@ body {
         font-size: 0.9rem;
         border: 2px solid black;
     }
-    @top-left-corner {
+    @top-right-corner {
         content: "";
-        margin: -3mm -627px 29px 88px;
+        margin: -3mm 81px 28px -620px ;
         border: 1px solid rgba(0, 0, 0, 0.5);
     }
     @bottom-left {
         content: counter(page) "　| 法曹同志会 2022";
         font-family: YakuCaltMincho, YuMincho, Yu Mincho, serif;
         font-size: 11px;
-        vertical-align: top;
-        padding-top: 2rem;
-    }
-    @bottom-center {
-        content: "";
+        vertical-align: bottom;
+        padding-bottom: 3rem;
     }
 }
 

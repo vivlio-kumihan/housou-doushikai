@@ -43,7 +43,9 @@ body {
     @right-top {
         content: "";
         margin: -44px 85px -44px -644px;
-        background: url("../img/img_background.jpg");
+        background: url("../img/img_background-right.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
         z-index: -1;
     }
     @bottom-right {
@@ -73,7 +75,7 @@ body {
     @left-top {
         content: "";
         margin: -44px -644px -44px 85px;
-        background: url("../img/img_background.jpg");
+        background: url("../img/img_background-left.jpg");
         z-index: -1;
     }
     @bottom-left {
