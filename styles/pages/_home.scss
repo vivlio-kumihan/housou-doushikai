@@ -1,0 +1,23 @@
+@use '../globals/' as *;
+@use '../parts/common' as *;
+
+#container {
+  position: relative;
+  @include bg(
+    $image: "../images/bg-pattern.jpg",
+    $size: auto,
+    $repeat: repeat
+  );
+  transition: .5s;
+  z-index: 50;
+}
+
+// .sideを前面に出すためのローカル・スタッキング・コンテキストの親要素を仕掛ける。
+#main-content {
+  position: relative;
+  z-index: 0;
+  & main {
+    position: relative;
+    z-index: -1;
+  }
+}

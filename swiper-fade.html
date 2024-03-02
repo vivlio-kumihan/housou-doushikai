@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Noto+Serif+JP:wght@400;800&display=swap&family=Yuji+Boku&display=swap&"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/destyle.css@4.0.0/destyle.min.css">
+
+  <!-- 一旦ページローダーを止めている。 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <!-- 一旦ページローダーを止めている。 -->
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js" defer></script>
+
+  <script src="./scripts/libs/mobile-menu.js" defer></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script src="./scripts/libs/hero-slider.js" defer></script>
+
+  <script src="./scripts/vendors/gsap.min.js" defer></script>
+  <script src="./scripts/libs/text-animation.js" defer></script>
+
+  <script src="./scripts/libs/scroll.js" defer></script>
+
+  <script src="./scripts/main.js" defer></script>
+</head>
+
+<body>
+  <div id="global-container">
+    <div id="container">
+      <div class="mobile-menu__cover"></div>
+      <div class="nav-trigger"></div>
+      <div id="header" class="header">
+        <div class="header-bg"></div>
+        <div class="header__inner">
+          <div class="logo">
+            <a href="index.html">
+              <img src="./images/logo-org-name.svg" alt="" class="logo__org-name" />
+            </a>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__main-nav">
+              <li class="header__main-link"><a href="#whats-new">お知らせ</a></li>
+              <li class="header__main-link"><a href="#information">拝観案内</a></li>
+              <li class="header__main-link"><a href="#sns">SNS</a></li>
+              <li class="header__main-link"><a class="btn filled" href="treasures.html">お問合せ</a></li>
+            </ul>
+            <dl class="header__sub-nav">
+              <div class="header__sub-title">
+                <dt class="yuji-boku-regular">知&nbsp;る</dt>
+                <dd class="header__sub-link"><a href="#">六波羅蜜寺の歴史</a></dd>
+                <dd class="header__sub-link"><a href="#">六波羅蜜とは</a></dd>
+              </div>
+              <div class="header__sub-title">
+                <dt class="yuji-boku-regular">観&nbsp;る</dt>
+                <dd class="header__sub-link"><a href="#">六波羅蜜寺の寺宝</a></dd>
+                <dd class="header__sub-link"><a href="#">源平の史蹟</a></dd>
+              </div class="header__sub-title">
+              <div class="header__sub-title">
+                <dt class="yuji-boku-regular">巡&nbsp;る</dt>
+                <dd class="header__sub-link"><a href="#">西国十七番札所</a></dd>
+                <dd class="header__sub-link"><a href="#">都七福神の一・<br />巳成金弁財天</a></dd>
+              </div>
+              <div class="header__sub-title">
+                <dt class="yuji-boku-regular">叶&nbsp;う</dt>
+                <dd class="header__sub-link"><a href="#">開運推命おみくじ</a></dd>
+              </div>
+              <div class="header__sub-title">
+                <dt class="yuji-boku-regular">願&nbsp;う</dt>
+                <dd class="header__sub-link"><a href="#">福を呼ぶ銭洗い弁天</a></dd>
+                <dd class="header__sub-link"><a href="#">巳の日の特別ご朱印</a></dd>
+                <dd class="header__sub-link"><a href="#">御祈願お申込み</a></dd>
+              </div>
+              <div class="header__sub-title">
+                <dt class="yuji-boku-regular">集&nbsp;う</dt>
+                <dd class="header__sub-link"><a href="#">六波羅蜜寺の年中行事</a></dd>
+              </div>
+            </dl>
+          </nav>
+
+          <button class="mobile-menu__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <div id="content">
+        <div class="hero">
+          <div class="swiper sidewaysSlider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="hero__title">色</div>
+                <img src="./images/for-slide_01.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <div class="hero__title">即</div>
+                <img src="./images/for-slide_02.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <div class="hero__title">是</div>
+                <img src="./images/for-slide_03.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <div class="hero__title">空</div>
+                <img src="./images/for-slide_04.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <div class="hero__title">色</div>
+                <img src="./images/for-slide_05.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <div class="hero__title">即</div>
+                <img src="./images/for-slide_01.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <div class="hero__title">是</div>
+                <img src="./images/for-slide_02.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <div class="hero__title">空</div>
+                <img src="./images/for-slide_03.jpg" alt="">
+              </div>
+            </div>
+            <div class="hero__footer">
+              <img class="hero__down-allow" src="./images/arrow.svg" alt="">
+              <span class="hero__scorll-text">scroll</span>
+            </div>
+          </div>
+        </div>
+        <div id="main-content">
+          <!-- <aside class="side left">
+            <div class="side__inner">
+              <a class="twitter icon animate-title" href="#">Twitter</a>
+              <a class="facebook icon animate-title" href="#">Facebook</a>
+            </div>
+          </aside> -->
+
+          <main>
+            Important cultural property
+            六波羅蜜寺の寺宝
+            たび重なる兵火をのがれ、六波羅蜜寺には平安・鎌倉期の木像彫刻を代表とする名宝が数多く安置されています。
+
+            平安時代
+            国宝 十一面観音立像
+            普段は秘仏のため、本堂中央の厨子の中に安置されていますが、十二年に一度、辰年の年に御開帳されます。
+            重文 薬師如来坐像
+            重文 地蔵菩薩立像
+            重文 多聞天立像
+            重文 広目天立像
+            重文 持国天立像
+
+            鎌倉時代
+            重文 増長天立像
+            重文 地蔵菩薩坐像
+            重文 吉祥天女像
+            重文 閻魔大王像
+            重文 弘法大師像
+            重文 空也上人像
+            重文 平清盛坐像
+            重文 運慶坐像
+            重文 湛慶坐像
+
+            空也上人立像
+            鎌倉時代（重要文化財）
+            運慶の四男康勝の作。胸に金鼓を、右手に撞木を、左手に鹿の杖をつき、膝を露に草鞋をはき、念仏を唱える口から六体の阿弥陀が現れたという伝承のままに洗練された写実彫刻である。
+
+            平清盛坐像
+            鎌倉時代（重要文化財）
+            経巻を手にしたその風姿は平家物語に描かれている清盛の傲慢さは全くなく、仏者としての気品を覚える。一門の武運長久を祈願し、朱の中へ血を点じて写経した頃の太政大臣浄海入道清盛公の像である。
+
+            地蔵菩薩立像
+            巨匠定朝の作。元六波羅地蔵堂の本尊で、面相も優しく彩色に切金を混用し、左手に頭髪を持った珍しい仏像で”鬘掛地蔵”といわれている。
+
+            地蔵菩薩坐像
+            運慶の作。一族の菩提寺十輪院の本尊。一名”夢見地蔵”といわれ眉目秀麗な面相や変化のある法衣のひだのまとめ方は実に優れている。
+
+            運慶坐像・湛慶坐像
+            わが国の彫刻界の黄金期を築いた運慶・湛慶（運慶の長男）の父子の像。当時十輪院は運慶一族の菩提寺であったことから、本尊の脇侍のように祀られていた。
+
+            重要有形民俗文化財
+            泥塔
+            皇服茶碗
+            版木
+            萬燈会関係用具 2300余点
+            <!-- <section class="openning appear up">
+              <h2 id="whats-new" class="openning__title item">お知らせ</h2>
+              <div class="openning__inner">
+                <div class="openning__whats-new">
+                  <ul>
+                    <li class="openning__news item">
+                      <div class="date">2024.03.07</div>
+                      <div class="title">西国三十三所 納経料改定のお知らせ</div>
+                    </li>
+                    <li class="openning__news item">
+                      <div class="date">2024.03.07</div>
+                      <div class="title">都七福神 御朱印料改定のお知らせ</div>
+                    </li>
+                    <li class="openning__news item">
+                      <div class="date">2024.02.21</div>
+                      <div class="title">令和六年 春季彼岸会御案内</div>
+                    </li>
+                    <li class="openning__news item">
+                      <div class="date">2024.01.19</div>
+                      <div class="title">令和６年能登半島地震のお見舞い</div>
+                    </li>
+                  </ul>
+                  <div class="btn-wrap item">
+                    <button class="openning__btn btn slide-bg">一覧へ</button>
+                  </div>
+                </div>
+                <div class="openning__movie item">
+                  <iframe class="openning__youtube" src="https://www.youtube.com/embed/Ombbrg1Usn4" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+            </section> -->
+
+            <!-- <section class="information appear up">
+              <h2 id="information" class="item">拝観案内</h2>
+              <div class="information__inner appear up">
+                <div class="information__point item">
+                  <div class="temple-name item">補陀洛山 六波羅蜜寺</div>
+                  <div class="claim item">
+                    <span>空也の寺&emsp;&emsp;源平両氏の中心史蹟</span>
+                    <span>西国十七番札所霊場</span>
+                    <span>都七福神の一・巳成金弁財天</span>
+                  </div>
+                </div>
+                <dl class="information__businesshours-fee-traffic">
+                  <div class="information__time-fee">
+                    <div class="information__item time item">
+                      <dt>拝観時間―通常</dt>
+                      <dd>【開門】8:00&emsp;【閉門】17:00</dd>
+                    </div>
+                    <div class="information__item time item">
+                      <dt>令和館 拝観時間</dt>
+                      <dd>【開館】8:30&emsp;【閉館】16:45 （受付終了 16:30）</dd>
+                    </div>
+                    <div class="information__item fee item">
+                      <dt>令和館 拝観料金</dt>
+                      <dd>
+                        <div>《大人》600円</div>
+                        <div>《大学生・高校生・中学生》500円</div>
+                        <div>《小学生》400円</div>
+                        <div>※30名様以上の団体の場合50円は各引き</div>
+                      </dd>
+                    </div>
+                  </div>
+                  <div class="information__item traffic item">
+                    <dt>交通機関</dt>
+                    <dd>
+                      <dl>
+                        <div class="item">
+                          <dt>京都市バス</dt>
+                          <dd>京都駅 206 系統、清水道下車、徒歩7分</dd>
+                        </div>
+                        <div class="item">
+                          <dt>京阪電車</dt>
+                          <dd>清水五条駅下車、徒歩7分</dd>
+                        </div>
+                        <div class="item">
+                          <dt>阪急電車</dt>
+                          <dd>河原町駅下車、徒歩15分</dd>
+                        </div>
+                        <div class="item">
+                          <dt>駐車場</dt>
+                          <dd>5台分の駐車場をご用意しております。</dd>
+                        </div>
+                      </dl>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+              <div class="btn-wrap item">
+                <button class="information__btn btn slide-bg"><a href="#">地&emsp;図</a></button>
+              </div>
+              <div class="information__address-tel item">
+                <address class="item">〒605-0813&nbsp;京都市東山区ロクロ町81-1 六波羅蜜寺</address>
+                <div class="tel item">TEL.<a href="tel:075-561-6980">075-561-6980</a></div>
+              </div>
+            </section> -->
+
+            <!-- <section class="to-content appear left">
+              <ul class="to-content__inner">
+                <li class="to-content__item how item">
+                  <div class="to-content__cover" href="#">
+                    <div class="to-content__catch">
+                      知る
+                    </div>
+                    <div class="to-content__title">
+                      <a class="to-content__anchor" href="#">六波羅蜜寺の歴史</a>
+                      <a class="to-content__anchor" href="#">六波羅蜜とは</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="to-content__item insight item">
+                  <div class="to-content__cover" href="#">
+                    <div class="to-content__catch">
+                      観る
+                    </div>
+                    <div class="to-content__title">
+                      <a class="to-content__anchor" href="#">六波羅蜜寺の寺宝</a>
+                      <a class="to-content__anchor" href="#">源平の史蹟</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="to-content__item round item">
+                  <div class="to-content__cover" href="#">
+                    <div class="to-content__catch">
+                      巡る
+                    </div>
+                    <div class="to-content__title">
+                      <a class="to-content__anchor" href="#">西国十七番札所</a>
+                      <a class="to-content__anchor" href="#">都七福神の一・巳成金弁財天</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="to-content__item rival item">
+                  <div class="to-content__cover" href="#">
+                    <div class="to-content__catch">
+                      叶う
+                    </div>
+                    <div class="to-content__title">
+                      <a class="to-content__anchor" href="#">開運推命おみくじ</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="to-content__item hope item">
+                  <div class="to-content__cover" href="#">
+                    <div class="to-content__catch">
+                      願う
+                    </div>
+                    <div class="to-content__title">
+                      <a class="to-content__anchor" href="#">福を呼ぶ銭洗い弁天</a>
+                      <a class="to-content__anchor" href="#">巳の日の特別ご朱印</a>
+                      <a class="to-content__anchor" href="#">御祈願お申込</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="to-content__item gather item">
+                  <div class="to-content__cover" href="#">
+                    <div class="to-content__catch">
+                      集う
+                    </div>
+                    <div class="to-content__title">
+                      <a class="to-content__anchor" href="#">六波羅蜜寺の年中行事</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </section> -->
+
+            <!-- <section class="sns appear up">
+              <h2 id="sns" class="header-under-line item">SNS</h2>
+              <ul class="sns__inner">
+                <li class="sns__channel item">
+                  <a class="sns__anchor btn slide-bg" href="#">
+                    <span class="twitter black-icon"></span>
+                    六波羅蜜寺 公式アカウント
+                  </a>
+                </li>
+                <li class="sns__channel item">
+                  <a class="sns__anchor btn slide-bg" href="#">
+                    <span class="instagram black-icon"></span>
+                    六波羅蜜寺 公式アカウント
+                  </a>
+                </li>
+                <li class="sns__channel item">
+                  <a class="sns__anchor btn slide-bg" href="#">
+                    <span class="youtube black-icon"></span>
+                    六波羅蜜寺 公式チャンネル
+                  </a>
+                </li>
+              </ul>
+            </section> -->
+          </main>
+
+          <!-- <aside class="side right">
+            <div class="side__inner">
+              <span class="animate-title">&copy; Code Mafia</span>
+            </div>
+          </aside> -->
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="wrapper appear up">
+          <div class="logo item">
+            <img src="./images/logo-org-name-white.svg" alt="" class="logo__org-name" />
+          </div>
+          <div class="footer__nav">
+            <ul class="item">
+              <li><a href="#">お問い合わせ</a></li>
+              <li><a href="#">個人情報保護方針</a></li>
+            </ul>
+            <ul class="item">
+              <li><a href="#" class="footer__icon twitter"></a></li>
+              <li><a href="#" class="footer__icon instagram"></a></li>
+              <li><a href="#" class="footer__icon youtube"></a></li>
+            </ul>
+          </div>
+          <div class="footer__address item">
+            京都市東山区ロクロ町81-1 六波羅蜜寺<br class="mq-swich" />TEL. 075-561-6980
+          </div>
+          <div class="footer__copyright item">
+            &copy;Rokuharamitsuji Temple
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="mobile-menu">
+      <div class="logo">
+        <a href="index.html">
+          <img class="logo__img" src="./images/logo-org-name.svg" alt="">
+        </a>
+      </div>
+      <ul class="mobile-menu__main">
+        <li class="mobile-menu__main-link"><a href="#whats-new">お知らせ</a></li>
+        <li class="mobile-menu__main-link"><a href="#information">拝観案内</a></li>
+        <li class="mobile-menu__main-link"><a href="#sns">SNS</a></li>
+        <li class="mobile-menu__main-link"><a href="treasures.html">お問合せ</a></li>
+      </ul>
+      <dl class="mobile-menu__sub-nav">
+        <div class="mobile-menu__sub-title">
+          <dt class="yuji-boku-regular">知&nbsp;る</dt>
+          <dd class="mobile-menu__sub-link">
+            <a href="#">六波羅蜜寺の歴史</a>
+            <a href="#">六波羅蜜とは</a>
+          </dd>
+        </div>
+        <div class="mobile-menu__sub-title">
+          <dt class="yuji-boku-regular">観&nbsp;る</dt>
+          <dd class="mobile-menu__sub-link">
+            <a href="#">六波羅蜜寺の寺宝</a>
+            <a href="#">源平の史蹟</a>
+          </dd>
+        </div>
+        <div class="mobile-menu__sub-title">
+          <dt class="yuji-boku-regular">巡&nbsp;る</dt>
+          <dd class="mobile-menu__sub-link">
+            <a href="#">西国十七番札所</a>
+            <a href="#">都七福神の一・<br />巳成金弁財天</a>
+          </dd>
+        </div>
+        <div class="mobile-menu__sub-title">
+          <dt class="yuji-boku-regular">叶&nbsp;う</dt>
+          <dd class="mobile-menu__sub-link">
+            <a href="#">開運推命おみくじ</a>
+          </dd>
+        </div>
+        <div class="mobile-menu__sub-title">
+          <dt class="yuji-boku-regular">願&nbsp;う</dt>
+          <dd class="mobile-menu__sub-link">
+            <a href="#">福を呼ぶ銭洗い弁天</a>
+            <a href="#">巳の日の特別ご朱印</a>
+            <a href="#">御祈願お申込み</a>
+          </dd>
+        </div>
+        <div class="mobile-menu__sub-title">
+          <dt class="yuji-boku-regular">集&nbsp;う</dt>
+          <dd class="mobile-menu__sub-link">
+            <a href="#">六波羅蜜寺の年中行事</a>
+          </dd>
+        </div>
+      </dl>
+    </nav>
+  </div>
+</body>
+
+</html>
